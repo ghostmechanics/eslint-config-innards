@@ -1,0 +1,30 @@
+{
+  "name": "eslint-config-innards",
+  "version": "0.0.1",
+  "description": "ESLint shareable config for innards",
+  "license": "MIT",
+  "repository": "ghostmechanics/eslint-config-innards",
+  "author": {
+    "name": "John Michel",
+    "email": "johnmichel@gmail.com"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "ghostmechanics",
+    "innards"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "eslint": "3.19.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=3.19.0"
+  },
+  "engines": {
+    "node": ">= 4.7.0 < 7",
+    "npm": "4.2.0"
+  }
+}
