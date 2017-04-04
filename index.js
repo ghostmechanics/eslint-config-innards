@@ -47,7 +47,7 @@ module.exports = {
         "guard-for-in": 2,
         "handle-callback-err": [2, "^.*(e|E)rr"],
         "id-blacklist": [2, "e"],
-        "id-length": [2, {"exceptions": ["fs"]}],
+        "id-length": [2, {"min": 3}],
         "id-match": 0,
         "indent": [2, 4],
         "init-declarations": [2, "never", {"ignoreForLoopInit": true}],
