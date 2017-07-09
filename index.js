@@ -213,8 +213,9 @@ module.exports = {
         "padded-blocks": [2, "never"],
         "padding-line-between-statements": [2, 
             {"blankLine": "always", "prev": "directive", "next": "*"},
-            {"blankLine": "always", "prev": ["const", "let", "var"], "next": "*"},
+            {"blankLine": "any", "prev": "directive", "next": "directive"},
             {"blankLine": "always", "prev": ["const", "let", "var"], "next": ["const", "let", "var"]},
+            {"blankLine": "any", "prev": ["const", "let", "var"], "next": ["const", "let", "var"]},
             {"blankLine": "always", "prev": "*", "next": "return"}
         ],
         "prefer-arrow-callback": 2,
