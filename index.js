@@ -220,7 +220,7 @@ module.exports = {
         ],
         "prefer-arrow-callback": 2,
         "prefer-const": 2,
-        "prefer-destructuring": [2, {"array": true, "object": true}],
+        "prefer-destructuring": [2, {"array": true, "object": true}, {"enforceForRenamedProperties": false}],
         "prefer-numeric-literals": 0,
         "prefer-promise-reject-errors": 2,
         "prefer-rest-params": 2,
