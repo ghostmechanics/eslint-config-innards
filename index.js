@@ -220,7 +220,8 @@ module.exports = {
             {"blankLine": "any", "prev": "directive", "next": "directive"},
             {"blankLine": "always", "prev": ["const", "let", "var"], "next": ["const", "let", "var"]},
             {"blankLine": "any", "prev": ["const", "let", "var"], "next": ["const", "let", "var"]},
-            {"blankLine": "always", "prev": "*", "next": "return"}
+            {"blankLine": "always", "prev": "*", "next": "return"},
+            {"blankLine": "always", "prev": "*", "next": "multiline-expression"}
         ],
         "prefer-arrow-callback": 2,
         "prefer-const": 2,
