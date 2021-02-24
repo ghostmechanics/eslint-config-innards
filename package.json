@@ -15,16 +15,16 @@
     "innards"
   ],
   "files": [
-    "index.js"
+    ".eslintrc.js"
   ],
   "devDependencies": {
-    "eslint": "4.19.1"
+    "eslint": "7.20.0"
   },
   "peerDependencies": {
-    "eslint": ">= 4.19.1"
+    "eslint": ">= 7.20.0"
   },
   "engines": {
-    "node": ">= 8.11.1 < 9",
-    "npm": ">= 5"
+    "node": ">= 14.16.0",
+    "npm": ">= 6"
   }
 }
