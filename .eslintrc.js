@@ -1,8 +1,6 @@
 /* eslint-disable max-lines */
 
-'use strict';
-
-// provide constants for rules that use numeric options
+// provide constants for rules that utilize numeric options
 const COMPLEXITY = 7;
 const ID_LENGTH = 3;
 const INDENT = 4;
@@ -11,7 +9,7 @@ const MAX_FUNC_LINES = 30;
 const MAX_NESTED_CALLBACKS = 3;
 const MAX_PARAMS = 4;
 
-module.exports = {
+export default {
     root: true,
     env: {
         browser: true,
@@ -19,7 +17,8 @@ module.exports = {
         node: true
     },
     parserOptions: {
-        ecmaVersion: 2021
+        ecmaVersion: 2022,
+        sourceType: 'module'
     },
     reportUnusedDisableDirectives: true,
     rules: {
@@ -89,6 +88,7 @@ module.exports = {
         'linebreak-style': 'error',
         'lines-around-comment': ['error', { beforeBlockComment: false }],
         'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+        'logical-assignment-operators': ['error', 'never'],
         'max-classes-per-file': ['error', 1],
         'max-depth': 'error',
         'max-len': 'off',
@@ -127,6 +127,7 @@ module.exports = {
         'no-confusing-arrow': ['error', { allowParens: true }],
         'no-console': 'warn',
         'no-const-assign': 'error',
+        'no-constant-binary-expression': 'error',
         'no-constant-condition': 'error',
         'no-constructor-return': 'error',
         'no-continue': 'error',
@@ -144,6 +145,7 @@ module.exports = {
         'no-empty-character-class': 'error',
         'no-empty-function': 'error',
         'no-empty-pattern': 'error',
+        'no-empty-static-block': 'error',
         'no-empty': 'error',
         'no-eq-null': 'error',
         'no-eval': 'error',
@@ -189,6 +191,7 @@ module.exports = {
         'no-negated-condition': 'error',
         'no-nested-ternary': 'warn',
         'no-new-func': 'error',
+        'no-new-native-nonconstructor': 'error',
         'no-new-object': 'error',
         'no-new-require': 'error',
         'no-new-symbol': 'error',
@@ -248,6 +251,7 @@ module.exports = {
             allowTernary: true
         }],
         'no-unused-labels': 'error',
+        'no-unused-private-class-members': 'error',
         'no-unused-vars': 'error',
         'no-use-before-define': 'error',
         'no-useless-backreference': 'error',
@@ -261,7 +265,7 @@ module.exports = {
         'no-useless-return': 'error',
         'no-var': 'error',
         'no-void': 'error',
-        'no-warn-comments': 'off',
+        'no-warning-comments': 'off',
         'no-whitespace-before-property': 'error',
         'no-with': 'error',
         'nonblock-statement-body-position': 'off',
@@ -315,6 +319,7 @@ module.exports = {
         ],
         'prefer-exponentiation-operator': 'warn',
         'prefer-numeric-literals': 'off',
+        'prefer-object-has-own': 'off',
         'prefer-object-spread': 'warn',
         'prefer-promise-reject-errors': 'error',
         'prefer-regex-literals': 'error',
